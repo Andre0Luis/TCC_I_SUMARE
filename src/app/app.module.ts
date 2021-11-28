@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/layouts/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { FooterComponent } from './components/layouts/footer/footer.component';
 import { ContactComponent } from './components/layouts/contact/contact.component';
+import { FormBuilder, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './components/layouts/contact/contact.component
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormBuilder
   ],
   providers: [
       Location, {
