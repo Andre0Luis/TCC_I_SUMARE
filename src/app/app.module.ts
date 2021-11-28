@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/layouts/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { FooterComponent } from './components/layouts/footer/footer.component';
+import { ContactComponent } from './components/layouts/contact/contact.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
     
   ],
   imports: [
