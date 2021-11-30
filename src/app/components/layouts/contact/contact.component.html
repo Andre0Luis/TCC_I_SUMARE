@@ -1,0 +1,109 @@
+
+<section class="section-padding">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-heading">
+                <h6 class="text-orange mb-xl-10 sub-heading"><span>Contato</span></h6>
+                <h3 class="text-blue fw-700 title">Entre em contato Conosco<span class="text-orange">.</span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-box mb-md-30">
+                    <div class="icon text-orange">
+                        <i class="fal fa-map"></i>
+                    </div>
+                    <h3 class="fw-600">Endereço</h3>
+                    <a href="#" class="fw-500 fs-16">Av. Paulista, Nº 520 - Bela Vista São Paulo - Brasil</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-box mb-md-30">
+                    <div class="icon text-orange">
+                        <i class="fal fa-phone"></i>
+                    </div>
+                    <h3 class="fw-600">Telefone</h3>
+                    <a href="tel:" class="fw-500 fs-16">+55 11 95253-6963</a>
+                    <a href="tel:" class="fw-500 fs-16">+55 11 96525-9632</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-box">
+                    <div class="icon text-orange">
+                        <i class="fal fa-globe"></i>
+                    </div>
+                    <h3 class="fw-600">Contato Web</h3>
+                    <a href="mailto:" class="fw-500 fs-16">datastormdss@gmail.com</a>
+                    <a href="#" class="fw-500 fs-16">http://www.brainstorm.kinghost.net/</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-padding-top">
+    <div class="container">
+        <div class="col-12">
+            <div class="contact-form" >
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group group-form">
+                                <input type="text" name="name" class="form-control form-control-custom" placeholder="Nome Completo"
+                                id="name" required formControlName="name" />
+                                <span class="icon">
+                                    <i class="fal fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group group-form">
+                                <input type="email" name="email" class="form-control form-control-custom" placeholder="Email"
+                                id="email" formControlName="email"/>
+                                <span class="icon">
+                                    <i class="fal fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group group-form">
+                                <input type="tel" name="telNumber" class="form-control form-control-custom" placeholder="Telefone"
+                                id="telNumber" required formControlName="telNumber"/>
+                                <span class="icon">
+                                    <i class="fal fa-phone-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group group-form">
+                                <input type="subject" name="subject" class="form-control form-control-custom" placeholder="Assunto"
+                                id="subject" required formControlName="subject"/>
+                                <span class="icon">
+                                    <i class="fal fa-book"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group group-form" >
+                                <textarea name="message_html" class="form-control form-control-custom" placeholder="Sua mensagem"
+                                id="message" formControlName="message"></textarea>
+                                <span class="icon">
+                                    <i class="fal fa-pencil-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="theme-btn btn-orange">Enviar mensagem</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="contact-map">
+    <iframe title="contact map" class="image-fit" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975844559975!2d-46.65867588502221!3d-23.561346184682872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1637885116686!5m2!1spt-BR!2sbr"></iframe>
+</div>
+
