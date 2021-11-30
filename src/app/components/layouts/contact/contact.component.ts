@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Email } from '../../models/email.model';
+import { SendEmailService } from '../../service/send-email.service';
+
 
 @Component({
   selector: 'app-contact',
@@ -11,15 +12,20 @@ import { Email } from '../../models/email.model';
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
-  email: Email;
 
   constructor(
-    private fb: FormBuilder
+    private formBuilder: FormBuilder,
+    private sendEmail: SendEmailService
+   
   ) { }
 
 
+  ngOnInit(): void {
+    this.createForm(new Email());
+  }
+
   createForm(email: Email){
-    this.contactForm = this.fb.group({
+    this.contactForm = this.formBuilder.group({
       name: [email.name],
       telNumber: [email.telNumber],
       email: [email.email],
@@ -28,24 +34,10 @@ export class ContactComponent implements OnInit {
     })
   }
 
-  sendEmail(){
-    console.log('#######################################\n ', this.contactForm.value)
-  }
-
-
-
- // public sendEmail(e: Event) {
- //   e.preventDefault();
-  //  emailjs.sendForm('smtp_server', 'template_8uQnFG6N_clone', e.target as HTMLFormElement, 'user_XWPdjpTv0DgrQb9FN3tWr')
-  //      alert("This form has been submitted.");
-   //     location.href = '#';
-  //      console.log(result.text);
-  //    }, (error) => {
-   //     console.log(error.text);
-    //  });
-// }
-
-  ngOnInit(): void {
-  }
+  onSubmit(){
+    console.log('#######################################\n ', this.contactForm.value);
+    this.sendEmail.sendContactEmail(this.contactForm.value);
+    this.contactForm.reset(new Email());
+  } 
 
 }

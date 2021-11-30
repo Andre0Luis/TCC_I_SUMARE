@@ -9,7 +9,7 @@ import { HeaderComponent } from './components/layouts/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { FooterComponent } from './components/layouts/footer/footer.component';
 import { ContactComponent } from './components/layouts/contact/contact.component';
-import { FormBuilder, FormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,19 +18,20 @@ import { FormBuilder, FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     ContactComponent
-    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormBuilder
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
       Location, {
         provide: LocationStrategy,
         useClass: PathLocationStrategy
-      }
+      },
+      FormBuilder
   ],
   bootstrap: [AppComponent]
 })

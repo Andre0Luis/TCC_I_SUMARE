@@ -45,13 +45,13 @@
 <section class="section-padding-top">
     <div class="container">
         <div class="col-12">
-            <div class="contact-form">
-                <form>
+            <div class="contact-form" >
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group group-form">
                                 <input type="text" name="name" class="form-control form-control-custom" placeholder="Nome Completo"
-                                id="name" required formControlName="name"/>
+                                id="name" required formControlName="name" />
                                 <span class="icon">
                                     <i class="fal fa-user"></i>
                                 </span>
