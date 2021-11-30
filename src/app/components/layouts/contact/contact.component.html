@@ -45,12 +45,13 @@
 <section class="section-padding-top">
     <div class="container">
         <div class="col-12">
-            <div class="contact-form">
-                <form (submit)="sendEmail($event)">
+            <div class="contact-form" >
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group group-form">
-                                <input type="text" name="from_name" class="form-control form-control-custom" placeholder="Nome Completo"/>
+                                <input type="text" name="name" class="form-control form-control-custom" placeholder="Nome Completo"
+                                id="name" required formControlName="name" />
                                 <span class="icon">
                                     <i class="fal fa-user"></i>
                                 </span>
@@ -58,7 +59,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group group-form">
-                                <input type="email" name="to_email" class="form-control form-control-custom" placeholder="Email"/>
+                                <input type="email" name="email" class="form-control form-control-custom" placeholder="Email"
+                                id="email" formControlName="email"/>
                                 <span class="icon">
                                     <i class="fal fa-envelope"></i>
                                 </span>
@@ -66,7 +68,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group group-form">
-                                <input type="text" name="to_phone" class="form-control form-control-custom" placeholder="Telefone"/>
+                                <input type="tel" name="telNumber" class="form-control form-control-custom" placeholder="Telefone"
+                                id="telNumber" required formControlName="telNumber"/>
                                 <span class="icon">
                                     <i class="fal fa-phone-alt"></i>
                                 </span>
@@ -74,12 +77,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group group-form">
-                                <select class="form-control form-control-custom" name="Assunto">
-                                    <option>Selecione um assunto</option>
-                                    <option>Consultoria</option>
-                                    <option>Agendamento</option>
-                                    <option>Dúvidas</option>
-                                </select>
+                                <input type="subject" name="subject" class="form-control form-control-custom" placeholder="Assunto"
+                                id="subject" required formControlName="subject"/>
                                 <span class="icon">
                                     <i class="fal fa-book"></i>
                                 </span>
@@ -87,7 +86,8 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group group-form" >
-                                <textarea name="message_html" class="form-control form-control-custom" placeholder="Sua mensagem"></textarea>
+                                <textarea name="message_html" class="form-control form-control-custom" placeholder="Sua mensagem"
+                                id="message" formControlName="message"></textarea>
                                 <span class="icon">
                                     <i class="fal fa-pencil-alt"></i>
                                 </span>
