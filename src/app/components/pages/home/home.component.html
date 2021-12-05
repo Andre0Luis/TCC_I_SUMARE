@@ -15,8 +15,8 @@
                                     <li class="text-custom-white fw-600 fs-20">Desenvolvimento</li>
                                 </ul>
                                 <h1 class="fw-600 text-custom-white heading-title">Prospere com nossas dicas de segurança</h1>
-                                <a href="#protect" class="theme-btn btn-red mr-3" >Como se proteger? <i class="fal fa-plus"></i></a>
-                                <a href="#contact" class="theme-btn btn-border">Entre em contato <i class="fal fa-plus"></i></a>
+                                <a (click)="ScrollIntoView('#info')" class="theme-btn btn-red mr-3" >Como se proteger? <i class="fal fa-plus"></i></a>
+                                <a (click)="ScrollIntoView('#contact')" class="theme-btn btn-border">Entre em contato <i class="fal fa-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -34,8 +34,8 @@
                                     <li class="text-custom-white fw-600 fs-20">Desenvolvimento</li>
                                 </ul>
                                 <h1 class="fw-600 text-custom-white heading-title">Obtenha o melhor para sua empresa e seus clientes</h1>
-                                <a href="#protect" class="theme-btn btn-red mr-3" >Como se proteger? <i class="fal fa-plus"></i></a>
-                                <a href="#contact" class="theme-btn btn-border">Entre em contato<i class="fal fa-plus"></i></a>
+                                <a (click)="ScrollIntoView('#info')" class="theme-btn btn-red mr-3" >Como se proteger? <i class="fal fa-plus"></i></a>
+                                <a (click)="ScrollIntoView('#contact')" class="theme-btn btn-border">Entre em contato<i class="fal fa-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -53,8 +53,8 @@
                                     <li class="text-custom-white fw-600 fs-20">Desenvolvimento</li>
                                 </ul>
                                 <h1 class="fw-600 text-custom-white heading-title">Fique sempre informado sobre segurança de seus dados</h1>
-                                <a href="#protect" class="theme-btn btn-red mr-3" >Como se proteger? <i class="fal fa-plus"></i></a>
-                                <a href="#contact" class="theme-btn btn-border">Entre em contato<i class="fal fa-plus"></i></a>
+                                <a (click)="ScrollIntoView('#info')" class="theme-btn btn-red mr-3" >Como se proteger? <i class="fal fa-plus"></i></a>
+                                <a (click)="ScrollIntoView('#contact')" class="theme-btn btn-border">Entre em contato<i class="fal fa-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
             <div class="col-lg-6">
                 <div class="section-header left-heading">
                     <div class="section-heading">
-                        <h6 class="text-red mb-xl-10 sub-heading"><span>Sobre nós</span></h6>
+                        <h6 class="text-red mb-xl-10 sub-heading" id="company"><span>Sobre nós</span></h6>
                         <h3 class="fw-700 title">Nossos valores centrais e nossa equipe incrível<span class="text-red">.</span></h3>
                         <p class="desc fw-500">Nós da Data Storm temos como objetivo trazer a melhor consultoria para você e sua empresa, lhe entregando dicas e noticias sobre segurança da informação.</p>
                     </div>
@@ -134,7 +134,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="right-side p-relative">
-                    <img src="assets/images/home-03.jpg" class="image-fit" alt="">
+                    <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-03.jpg" class="image-fit" alt="">
                     <div class="about-counter">
                         <div>
                             <span class="count">10</span><span class="text-custom-white">+</span>
@@ -154,9 +154,9 @@
             <div class="col-lg-6">
                 <div class="section-header left-heading pb-0 mb-md-40">
                     <div class="section-heading">
-                        <h6 class="text-red mb-xl-10 sub-heading"><span>Nosso crescimento</span></h6>
+                        <h6 class="text-red mb-xl-10 sub-heading"><span>Resultados</span></h6>
                         <h3 class="fw-700 title">Veja nosso volume de clientes atendidos<span class="text-red">.</span></h3>
-                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+                        <p class="desc">Nos últimos meses nosso volume de cliente vem aumentando cada vez mais, tornando as empresas de nossos clientes cada vez mais seguras. Veja nosso volume de clientes atendidos com sucesso.</p>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@
     <div class="container">
         <div class="section-header">
             <div class="section-heading">
-                <h6 class="text-red mb-xl-10 sub-heading"><span>Serviços</span></h6>
+                <h6 class="text-red mb-xl-10 sub-heading" id="info"><span>Informações</span></h6>
                 <h3 class="fw-700 title">Qual a utilidade de segurança da informação na Tecnologia?<span class="text-red">.</span></h3>
             </div>
         </div>
@@ -191,7 +191,7 @@
                 <div class="custom-tabs">
                     <ul class="custom-flex nav nav-tabs row">
                         <li class="nav-item col-lg-2 col-sm-4 col-6">
-                            <a href="#seg" class="nav-link" data-toggle="tab">
+                            <a href="#oq" class="nav-link" data-toggle="tab">
                                 <span class="fw-500">O que é segurança da informação?</span>
                             </a>
                         </li>
@@ -222,11 +222,11 @@
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade" id="seg">
+                        <div class="tab-pane fade" id="oq">
                             <div class="tab-inner">
                                 <div class="row">
                                     <div class="col-lg-5">
-                                        <img src="assets/images/home-04.jpg" class="image-fit" alt="">
+                                        <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-04.jpg" class="image-fit" alt="">
                                     </div>
                                     <div class="col-lg-7">
                                         <div class="right-side">
@@ -306,7 +306,6 @@
                                             <p class="double-lines fw-500 text-red mb-1"><span>Disponibilidade</span></p>
                                             <h3 class="fw-600">Disponibilidade</h3>
                                             <p class="fw-500">Um sistema de informação relacionado a segurança da informação para ser viável e útil e necessário garantir acesso aos dados de forma segura e rápida, mantendo disponíveis as informações quando requeridas quando necessárias e ao mesmo tempo eliminando falhas no software evitando acessos indesejados. </p>
-                                        
                                             <i class="flaticon-suitcase"></i>
                                         </div>
                                     </div>
@@ -338,32 +337,35 @@
     </div>
 </section>
 
-<section class="section-padding">
+<section class="section-padding" id="hack">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="section-header left-heading">
                     <div class="section-heading">
-                        <h6 class="text-red mb-xl-10 sub-heading"><span>Porque  nos escolher</span></h6>
-                        <h3 class="fw-700 title">Veja nossos diferenciais<span class="text-red">.</span></h3>
+                        <h6 class="text-red mb-xl-10 sub-heading"><span>Evite problemas</span></h6>
+                        <h3 class="fw-700 title">Problemas com a segurança na comunicação lenta (causas, consequências e como evitar)<span class="text-red">.</span></h3>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 text-lg-right mb-xl-30">
-                <a href="#" class="theme-btn btn-red">Contato</a>
+                <a (click)="ScrollIntoView('#contact')" class="theme-btn btn-red">Entre em contato, para uma solução personalizada</a>
             </div>
         </div>
         <div class="row">
+            <div>
+                <h5 class="fw-600 no-margin" align="justify">Atualmente é indispensável o uso da internet em empresas e negócios. Todos os processos dependem da boa qualidade da conectividade, ou seja, se a conexão for lenta, resultará em prejuízos. Bancos quando se deparam com lentidão no sistema enfrentam grandes filas e clientes nervosos pela demora no atendimento. Mesmo com todo planejamento em relação aos incidentes, ainda há a probabilidade de ocorrer problemas na comunicação.</h5>
+            </div>
             <div class="col-lg-4 col-md-6">
                 <div class="choose-us-box mb-md-30">
                     <div class="top-sec">
                         <div class="icon">
                             <i class="flaticon-statistics text-red"></i>
                         </div>
-                        <h4 class="fw-600 no-margin"><a routerLink='/service-detail'>Consultoria Digital</a></h4>
+                        <h4 class="fw-600 no-margin">Causas</h4>
                     </div>
-                    <p class="fw-500 mb-xl-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nim ad minim veniam. </p>
-                    <a routerLink='/service-detail' class="fw-600 fs-14 link">Leia mais <i class="fas fa-long-arrow-right text-red"></i></a>
+                    <p class="fw-500 mb-xl-10">Atualmente é indispensável o uso da internet em empresas e negócios. Todos os processos dependem da boa qualidade da conectividade, ou seja, se a...</p>
+                    <button mat-button (click)="openDialog2()">Leia mais</button> <i class="fas fa-long-arrow-right text-red"></i>
                     <i class="flaticon-statistics bg-icon"></i>
                 </div>
             </div>
@@ -373,10 +375,10 @@
                         <div class="icon">
                             <i class="flaticon-market text-red"></i>
                         </div>
-                        <h4 class="fw-600 no-margin"><a routerLink='/service-detail'>Pesquisas</a></h4>
+                        <h4 class="fw-600 no-margin">Consequências</h4>
                     </div>
-                    <p class="fw-500 mb-xl-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nim ad minim veniam. </p>
-                    <a routerLink='/service-detail' class="fw-600 fs-14 link">Leia mais <i class="fas fa-long-arrow-right text-red"></i></a>
+                    <p class="fw-500 mb-xl-10">Esses problemas muitas vezes acabam causando impactos negativos na organização pelo desvio da qualidade da prestação de serviços... </p>
+                    <button mat-button (click)="openDialog()">Leia mais</button> <i class="fas fa-long-arrow-right text-red"></i>
                     <i class="flaticon-market bg-icon"></i>
                 </div>
             </div>
@@ -386,24 +388,25 @@
                         <div class="icon">
                             <i class="flaticon-investment text-red"></i>
                         </div>
-                        <h4 class="fw-600 no-margin"><a routerLink='/service-detail'>Produtividade</a></h4>
+                        <h4 class="fw-600 no-margin">Como evitar</h4>
                     </div>
-                    <p class="fw-500 mb-xl-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nim ad minim veniam. </p>
-                    <a routerLink='/service-detail' class="fw-600 fs-14 link">Leia mais <i class="fas fa-long-arrow-right text-red"></i></a>
+                    <p class="fw-500 mb-xl-10">Tomar os devidos cuidados com falhas na segurança ao fazer uso de Data Centers podem ser mais práticos, porém, acaba sendo... </p>
+                    <button mat-button (click)="openDialog3()">Leia mais</button> <i class="fas fa-long-arrow-right text-red"></i>
                     <i class="flaticon-investment bg-icon"></i>
+                    
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="bg-light section-padding faqs-style-2" id="protect">
+<section class="bg-light section-padding faqs-style-2" id="studyCase">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-xl-6 col-lg-7">
                 <div class="images-box mb-md-80">
-                    <img src="assets/images/home-05.jpg" class="image-fit image-1" alt="">
-                    <img src="assets/images/home-06.jpg" class="image-fit image-2" alt="">
+                    <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-05.jpg" class="image-fit image-1" alt="">
+                    <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-06.jpg" class="image-fit image-2" alt="">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-5">
@@ -541,32 +544,16 @@
             <div class="col-12">
                 <div class="slider-gallery row arrow-layout">
                     <div class="col-12 slide-item">
-                        <img src="assets/images/home-07.jpg" class="image-fit" alt="">
-                        <div class="gallery-text">
-                            <p class="text-red mb-xl-10 fw-600 double-lines"><span>Consultoria</span></p>
-                            <h3 class="fw-600"><a routerLink='/project-detail'>Seus dados</a></h3>
-                        </div>
+                        <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-07.jpg" class="image-fit" alt="">
                     </div>
                     <div class="col-12 slide-item">
-                        <img src="assets/images/home-14.jpg" class="image-fit" alt="">
-                        <div class="gallery-text">
-                            <p class="text-red mb-xl-10 fw-600 double-lines"><span>Consultoria</span></p>
-                            <h3 class="fw-600"><a routerLink='/project-detail'>Seus dados</a></h3>
-                        </div>
+                        <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-14.jpg" class="image-fit" alt="">
                     </div>
                     <div class="col-12 slide-item">
-                        <img src="assets/images/home-15.jpg" class="image-fit" alt="">
-                        <div class="gallery-text">
-                            <p class="text-red mb-xl-10 fw-600 double-lines"><span>Consultoria</span></p>
-                            <h3 class="fw-600"><a routerLink='/project-detail'>Seus dados</a></h3>
-                        </div>
+                        <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-15.jpg" class="image-fit" alt="">
                     </div>
                     <div class="col-12 slide-item">
-                        <img src="assets/images/home-14.jpg" class="image-fit" alt="">
-                        <div class="gallery-text">
-                            <p class="text-red mb-xl-10 fw-600 double-lines"><span>Consultoria</span></p>
-                            <h3 class="fw-600"><a routerLink='/project-detail'>Seus dados</a></h3>
-                        </div>
+                        <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-14.jpg" class="image-fit" alt="">
                     </div>
                 </div>
             </div>
@@ -578,8 +565,8 @@
     <div class="container">
         <div class="section-header">
             <div class="section-heading">
-                <h6 class="text-red mb-xl-10 sub-heading"><span>Novidades</span></h6>
-                <h3 class="fw-700 title">Noticias recentes<span class="text-red">.</span></h3>
+                <h6 class="text-red mb-xl-10 sub-heading"><span>Notícias</span></h6>
+                <h3 class="fw-700 title">Notícias para você<span class="text-red">.</span></h3>
             </div>
         </div>
         <div class="row">
@@ -589,29 +576,29 @@
                         <div class="blog-style-1 style-2">
                             <div class="post-img animate-img">
                                 <a routerLink='/news-detail'>
-                                    <img src="assets/images/home-16.jpg" class="image-fit" alt="">
+                                    <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-16.jpg" class="image-fit" alt="">
                                 </a>
                             </div>
                             <div class="post-date">
-                                <span class="date">17</span>
-                                <span class="month">Novembro</span>
+                                <span class="date">28</span>
+                                <span class="month">Agosto</span>
                             </div>
                             <div class="post-content">
                                 <div class="post-category">
-                                    <p class="double-lines text-red fw-600 mb-1"><span><a href="#" class="text-red">Dia a dia</a></span></p>
+                                    <p class="double-lines text-red fw-600 mb-1"><span><a href="#" class="text-red">Dicas</a></span></p>
                                 </div>
-                                <h2 class="post-title"><a routerLink='/news-detail'>Mantenha seu dia a dia mais seguro</a></h2>
+                                <h2 class="post-title"><a routerLink='/news-detail'>Aprenda a manter a segurança de dados da sua empresa</a></h2>
                                 <ul class="custom-flex post-meta">
                                     <li>
                                         <a href="#">
                                             <i class="fal fa-user text-red"></i>
-                                            Luizito A.
+                                            Algar Telecon
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <i class="fal fa-calendar-alt text-red"></i>
-                                            17 de Novembro 2021
+                                            28 de Agosto de 2020
                                         </a>
                                     </li>
                                 </ul>
@@ -620,23 +607,9 @@
                             <div class="post-overlay normal-bg" style="background-image: url('assets/images/home-16.jpg');">
                                 <div class="post-overlay-meta">
                                     <div class="post-category">
-                                        <p class="double-lines text-custom-white fw-600 mb-1"><span><a href="#" class="text-custom-white">Segurança</a></span></p>
+                                        <p class="double-lines text-custom-white fw-600 mb-1"><span><a href="#" class="text-custom-white">Dicas de Segurança</a></span></p>
                                     </div>
-                                    <h2 class="post-title"><a routerLink='/news-detail' class="text-custom-white">Venha conhecer umas dicas</a></h2>
-                                    <ul class="custom-flex post-meta">
-                                    <li>
-                                        <a href="#" class="text-custom-white">
-                                            <i class="fal fa-user text-custom-white"></i>
-                                            Luizito
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-custom-white">
-                                            <i class="fal fa-calendar-alt text-custom-white"></i>
-                                            17 de Novembro 2021
-                                        </a>
-                                    </li>
-                                </ul>
+                                    <h2 class="post-title"><a href="https://blog.algartelecom.com.br/tecnologia/aprenda-a-manter-a-seguranca-de-dados-da-sua-empresa/" class="text-custom-white">Veja a matéria completa</a></h2>
                                 </div>
                             </div>
                         </div>
@@ -645,7 +618,7 @@
                         <div class="blog-style-1 style-2">
                             <div class="post-img animate-img">
                                 <a routerLink='/news-detail'>
-                                    <img src="assets/images/home-08.jpg" class="image-fit" alt="">
+                                    <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-08.jpg" class="image-fit" alt="">
                                 </a>
                             </div>
                             <div class="post-date">
@@ -654,20 +627,20 @@
                             </div>
                             <div class="post-content">
                                 <div class="post-category">
-                                    <p class="double-lines text-red fw-600 mb-1"><span><a href="#" class="text-red">Segurança</a></span></p>
+                                    <p class="double-lines text-red fw-600 mb-1"><span><a href="#" class="text-red">Segurança do dia a dia</a></span></p>
                                 </div>
-                                <h2 class="post-title"><a routerLink='/news-detail'>Exploração de dados aumenta no Brasil</a></h2>
+                                <h2 class="post-title"><a>Comerciantes com operações online relatam aumentos nas tentativas de fraude</a></h2>
                                 <ul class="custom-flex post-meta">
                                     <li>
-                                        <a href="#">
+                                        <a>
                                             <i class="fal fa-user text-red"></i>
-                                            André
+                                            Redação Security Report
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a>
                                             <i class="fal fa-calendar-alt text-red"></i>
-                                            18 de Novembro de 2021
+                                            03 de Dezembro de 2021
                                         </a>
                                     </li>
                                 </ul>
@@ -676,23 +649,9 @@
                             <div class="post-overlay normal-bg" style="background-image: url('assets/images/home-08.jpg');">
                                 <div class="post-overlay-meta">
                                     <div class="post-category">
-                                        <p class="double-lines text-custom-white fw-600 mb-1"><span><a href="#" class="text-custom-white">Segurança</a></span></p>
+                                        <p class="double-lines text-custom-white fw-600 mb-1"><span><a href="#" class="text-custom-white">Segurança do dia a dia</a></span></p>
                                     </div>
-                                    <h2 class="post-title"><a routerLink='/news-detail' class="text-custom-white">Descubra já como se proteger</a></h2>
-                                    <ul class="custom-flex post-meta">
-                                    <li>
-                                        <a href="#" class="text-custom-white">
-                                            <i class="fal fa-user text-custom-white"></i>
-                                            André
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-custom-white">
-                                            <i class="fal fa-calendar-alt text-custom-white"></i>
-                                            18 de Novembro de 2021
-                                        </a>
-                                    </li>
-                                </ul>
+                                    <h2 class="post-title"><a href="https://www.securityreport.com.br/destaques/comerciantes-com-operacoes-online-relatam-aumentos-nas-tentativas-de-fraude/#.YazaaYhKiiM" class="text-custom-white">Estudo global da Visa, incluindo entrevistados do Brasil, aponta que phishing e roubo de identidade são os mais comuns.</a></h2>
                                 </div>
                             </div>
                         </div>
@@ -701,29 +660,29 @@
                         <div class="blog-style-1 style-2">
                             <div class="post-img animate-img">
                                 <a routerLink='/news-detail'>
-                                    <img src="assets/images/home-17.jpg" class="image-fit" alt="">
+                                    <img src="https://tcc1sumare.blob.core.windows.net/tcc/home-17.jpg" class="image-fit" alt="">
                                 </a>
                             </div>
                             <div class="post-date">
-                                <span class="date">20</span>
-                                <span class="month">Novembro</span>
+                                <span class="date">2</span>
+                                <span class="month">Dezembro</span>
                             </div>
                             <div class="post-content">
                                 <div class="post-category">
                                     <p class="double-lines text-red fw-600 mb-1"><span><a href="#" class="text-red">Alertas</a></span></p>
                                 </div>
-                                <h2 class="post-title"><a routerLink='/news-detail'>Novo Ransonware é criado e ataca grandes empresas</a></h2>
+                                <h2 class="post-title"><a routerLink='/news-detail'>Fake News e cibersegurança: as mentiras que são verdadeiras ameaças para os negócios</a></h2>
                                 <ul class="custom-flex post-meta">
                                     <li>
-                                        <a href="#">
+                                        <a>
                                             <i class="fal fa-user text-red"></i>
-                                            Luizinho
+                                            Cléber Ribas, CEO da Blockbit 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a>
                                             <i class="fal fa-calendar-alt text-red"></i>
-                                            20 de Novembro de 2021
+                                            02 de Dezembro de 2021
                                         </a>
                                     </li>
                                 </ul>
@@ -734,21 +693,7 @@
                                     <div class="post-category">
                                         <p class="double-lines text-custom-white fw-600 mb-1"><span><a href="#" class="text-custom-white">Alertas</a></span></p>
                                     </div>
-                                    <h2 class="post-title"><a routerLink='/news-detail' class="text-custom-white">Fique atento já!</a></h2>
-                                    <ul class="custom-flex post-meta">
-                                    <li>
-                                        <a href="#" class="text-custom-white">
-                                            <i class="fal fa-user text-custom-white"></i>
-                                            Luizinho
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-custom-white">
-                                            <i class="fal fa-calendar-alt text-custom-white"></i>
-                                            18 de Novembro de 2021
-                                        </a>
-                                    </li>
-                                </ul>
+                                    <h2 class="post-title"><a href="https://cryptoid.com.br/ciberseguranca-seguranca-da-informacao/fake-news-e-ciberseguranca-as-mentiras-que-sao-verdadeiras-ameacas-para-os-negocios/" class="text-custom-white">Fique atento já! Veja o conteúdo completo.</a></h2>
                                 </div>
                             </div>
                         </div>

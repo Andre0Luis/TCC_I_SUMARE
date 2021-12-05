@@ -38,6 +38,7 @@ export class ContactComponent implements OnInit {
     console.log('#######################################\n ', this.contactForm.value);
     this.sendEmail.sendContactEmail(this.contactForm.value);
     this.contactForm.reset(new Email());
+
   } 
 
 }
