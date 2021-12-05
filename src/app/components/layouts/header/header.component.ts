@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isNavbarCollapsed = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ScrollIntoView(elem: string) {
+    console.log(elem);
+    document.querySelector(elem).scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  
 }
