@@ -15,6 +15,6 @@ export class SendEmailService {
 
   sendContactEmail(email: Email): Observable<Email> {
     console.log("#########################", email);
-    return this.http.post<Email>(`api/email/contact`, email);
+    return this.http.post<Email>(`localhost:8080/api/tcc/sendEmail`, email);
   }
 }
