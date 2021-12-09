@@ -24,7 +24,7 @@ Este site conterá informações sobre estratégias de agilidade da comunicaçã
 Ser uma possível referência de estudo para os futuros usuários.
   
 
-<http://www.brainstorm.kinghost.net/>
+<http://http://www.datastorm.kinghost.net/>
 
   
 
@@ -166,7 +166,7 @@ O comando git push é mais usado para publicar modificações locais a um reposi
 
 - MAIN - Branch destinada a build de produção.
 
-- HOMOLOG - Branch destinada a build de homologação/teste.
+- RELEASE - Branch destinada a build de homologação/teste.
 
 - DEVELOPMENT - Branch destinada a build de desenvolvimento.
 
@@ -174,7 +174,7 @@ O comando git push é mais usado para publicar modificações locais a um reposi
 
   
 
-Quando você faz a clonagem dos repositorios do projeto, precisa criar uma branch com o nome de development git checkout -b development e nela vc cria uma outra branch git checkout -b (coloca um nome que tenha referencia a sua tarefa) para fazer os commits e depois fazer o pull request no azure. Passo a passo de como fazer pull request: 1: sempre seleciona a branch que vc criou para fazer os commits; 2: sempre seleciona a development ; 3: marcar os avaliadores, sempre o lider do projeto e outra pessoa que auxilia; 4: aguardar a validação do lider.
+Quando você faz a clonagem dos repositorios do projeto, precisa criar uma branch com o nome de development git checkout -b development e nela vc cria uma outra branch git checkout -b (coloca um nome que tenha referencia a sua tarefa) para fazer os commits e depois fazer o pull request no github. Passo a passo de como fazer pull request: 1: sempre seleciona a branch que vc criou para fazer os commits; 2: sempre seleciona a development ; 3: marcar os avaliadores, sempre o lider do projeto e outra pessoa que auxilia; 4: aguardar a validação do lider.
 
   
 
@@ -182,7 +182,7 @@ Quando você faz a clonagem dos repositorios do projeto, precisa criar uma branc
 
   
 
-Mantenha as branchs **_development e homolog_** em sua forma mais atualizada, utilizando o método de **_pull resquests_**, pois ela é essencial para o fluxo(**_git flow_**), durante o processo de desenvolvimento e deploy da aplicação.
+Mantenha as branchs **_development e release_** em sua forma mais atualizada, utilizando o método de **_pull resquests_**, pois ela é essencial para o fluxo(**_git flow_**), durante o processo de desenvolvimento e deploy da aplicação.
 
 
 ## 🛠 Tecnologias
@@ -204,4 +204,4 @@ Mantenha as branchs **_development e homolog_** em sua forma mais atualizada, ut
 
   
 
-[Data Storm - © Todos os direitos reservados 2021](http://www.brainstorm.kinghost.net/).
+[Data Storm - © Todos os direitos reservados 2021](http://http://www.datastorm.kinghost.net/).
